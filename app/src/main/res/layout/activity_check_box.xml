@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context=".CheckBoxActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipo_de_pizza"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorOriginal"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/android_layout_arrays"
+        android:padding="5dp"
+        >
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipo_de_masa"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        android:paddingTop="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorOriginal"
+        />
+    
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masa_delgada"
+            android:checked="false"
+            android:onClick="radioButtonClicked"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masa_gruesa"
+            android:checked="false"
+            android:onClick="radioButtonClicked"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masa_artesanal"
+            android:checked="false"
+            android:onClick="radioButtonClicked"
+            />
+
+    </RadioGroup>
+
+   <!-- <TextView
+        android:id="@+id/displayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="22dp"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        /> -->
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/complementos"
+        android:layout_marginBottom="16sp"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorOriginal"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/extra_queso_mozzarella"
+        android:checked="false"
+        android:onClick="androidCheckBoxClicked"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/extra_jam_n"
+        android:checked="false"
+        android:onClick="androidCheckBoxClicked"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/direcci_n_de_env_o"
+        android:textSize="20sp"
+        android:layout_marginBottom="16sp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorOriginal"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="@string/calle_y_referencia"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/pedir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="@string/haz_tu_pedido"
+        android:textColor="@color/colorOriginal"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:onClick="showDialog"
+        />
+
+</LinearLayout>

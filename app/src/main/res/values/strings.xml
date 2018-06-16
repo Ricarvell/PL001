@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Punto Listo</string>
+    <string name="welcome">Bienvenid@</string>
+    <string name="emoji">:)</string>
+    <string name="masa_delgada">Masa Delgada</string>
+    <string name="masa_gruesa">Masa Gruesa</string>
+    <string name="masa_artesanal">Masa Artesanal</string>
+    <string name="tipo_de_masa">Tipo de Masa</string>
+    <string name="complementos">Complementos</string>
+    <string name="extra_queso_mozzarella">Extra Queso Mozzarella</string>
+    <string name="extra_jam_n">Extra Jamón</string>
+    <string name="direcci_n_de_env_o">Dirección de Envío</string>
+    <string name="tipo_de_pizza">Tipo de Pizza</string>
+    <string name="calle_y_referencia">Calle y Referencia</string>
+    <string name="haz_tu_pedido">¡Haz Tu Pedido!</string>
+
+    <string name="americana">Americana</string>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="hawaiana">Hawaiana</string>
+    <string name="meat_lovers">Meat Lovers</string>
+    <string name="a_lo_pobre">A Lo Pobre</string>
+    <string name="toxica">Tóxica</string>
+
+
+    <string name="precio_americana">38</string>
+    <string name="precio_pepperoni">42</string>
+    <string name="precio_hawaiana">36</string>
+    <string name="precio_meat_lovers">56</string>
+    <string name="precio_a_lo_pobre">58</string>
+    <string name="precio_toxica">200</string>
+
+
+    <string-array name="android_layout_arrays">
+        <item></item>
+        <item>Americana</item>
+        <item>Pepperoni</item>
+        <item>Hawaiana</item>
+        <item>Meat Lovers</item>
+        <item>A Lo Pobre</item>
+        <item>Tóxica</item>
+    </string-array>
+</resources>
